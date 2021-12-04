@@ -1,5 +1,0 @@
-/index.php (Status: 200)
-/uploads.php (Status: 200)
-/assets (Status: 301)
-/api (Status: 301)
-/grid (Status: 301)
