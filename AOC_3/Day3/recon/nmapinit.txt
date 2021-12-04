@@ -1,0 +1,14 @@
+# Nmap 7.92 scan initiated Fri Dec  3 18:08:39 2021 as: nmap -v -p80 -sC -sV -oN recon/nmapinit.txt 10.10.141.7
+Nmap scan report for santascookies.thm (10.10.141.7)
+Host is up (0.23s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Day3
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec  3 18:08:52 2021 -- 1 IP address (1 host up) scanned in 13.53 seconds
