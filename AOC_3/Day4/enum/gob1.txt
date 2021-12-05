@@ -1,0 +1,3 @@
+/assets               (Status: 301) [Size: 313] [--> http://10.10.80.130/assets/]
+/javascript           (Status: 301) [Size: 317] [--> http://10.10.80.130/javascript/]
+/phpmyadmin           (Status: 301) [Size: 317] [--> http://10.10.80.130/phpmyadmin/]

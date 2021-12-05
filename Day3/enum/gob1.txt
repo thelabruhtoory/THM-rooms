@@ -1,3 +1,0 @@
-/admin                (Status: 301) [Size: 322] [--> http://santascookies.thm/admin/]
-/assets               (Status: 301) [Size: 323] [--> http://santascookies.thm/assets/]
-/javascript           (Status: 301) [Size: 327] [--> http://santascookies.thm/javascript/]

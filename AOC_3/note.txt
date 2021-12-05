@@ -1,0 +1,1 @@
+For cherrytree, make sure to close all node directories, and export to singular ctb file, then export to report
