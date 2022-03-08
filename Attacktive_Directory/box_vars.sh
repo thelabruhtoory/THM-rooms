@@ -1,0 +1,20 @@
+#!/bin/bash
+ export hostname=spookysec.local
+ export ip=10.10.90.103
+ export open_ports=1,2,3
+ export web_port1=80
+ export base_url=http://:/
+ export alt_url=http://:/
+ export attack_ip=10.2.26.235
+ export net_subnet=17
+export open_ports=53,80,88,139,135,389,464,445,593,636,3268,3269,3389,5985,9389,47001,49669,49676,49664,49675,49683,49672,49665,49667,49679,49695,49822 
+export user1=svc-admin
+export passw1=management2005
+export hash1=fc0f1e5359e372aa1f69147375ba6809
+export user2=backup
+export passw2=backup2517860
+export hash2=19741bde08e135f4b40f1ca9aab45538
+export user3=Administrator
+export hash3=0e0363213e37b94221497260b0bcb4fc
+export domain=THM-AD.local
+export dc1=$ip

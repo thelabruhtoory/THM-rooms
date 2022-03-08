@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Mon Mar  7 16:05:53 2022 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 88 -&#45;script=banner,krb5-enum-users -oN /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/tcp88/tcp_88_kerberos_nmap.txt -oX /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/tcp88/xml/tcp_88_kerberos_nmap.xml 10.10.236.176 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 88 -&#45;script=banner,krb5-enum-users -oN /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/tcp88/tcp_88_kerberos_nmap.txt -oX /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/tcp88/xml/tcp_88_kerberos_nmap.xml 10.10.236.176" start="1646687153" startstr="Mon Mar  7 16:05:53 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="88"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1646687153"/>
+<taskend task="NSE" time="1646687153"/>
+<taskbegin task="NSE" time="1646687153"/>
+<taskend task="NSE" time="1646687153"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1646687154"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1646687154"/>
+<taskbegin task="SYN Stealth Scan" time="1646687154"/>
+<taskend task="SYN Stealth Scan" time="1646687154" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1646687155"/>
+<taskend task="Service scan" time="1646687162" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1646687162"/>
+<taskend task="NSE" time="1646687172"/>
+<taskbegin task="NSE" time="1646687172"/>
+<taskend task="NSE" time="1646687172"/>
+<host starttime="1646687154" endtime="1646687172"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.236.176" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2022-03-07 21:06:02Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<times srtt="233743" rttvar="233743" to="1168715"/>
+</host>
+<taskbegin task="NSE" time="1646687172"/>
+<taskend task="NSE" time="1646687172"/>
+<taskbegin task="NSE" time="1646687172"/>
+<taskend task="NSE" time="1646687172"/>
+<runstats><finished time="1646687172" timestr="Mon Mar  7 16:06:12 2022" summary="Nmap done at Mon Mar  7 16:06:12 2022; 1 IP address (1 host up) scanned in 19.18 seconds" elapsed="19.18" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

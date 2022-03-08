@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "a8c4f5d8169ae179",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f007288e4667a73",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "env.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "332df73f57a9b5ed",
+    "type": "split",
+    "children": [
+      {
+        "id": "65361533c20a9b2d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c556f5b82bf16c0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "25eb5c1286699ca1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6815d9fa8bc7b8cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "2dc46f1e580de9bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31cfd8e01c001410",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "env.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "4f007288e4667a73",
+  "lastOpenFiles": [
+    "env.md",
+    "enum/AD-enum/screenshots.md",
+    "screenshots-tmp/Get AD Users.png",
+    "enum/smb/screenshots/screenshots.md",
+    "enum/userlist.md",
+    "enum/passwordlist.md",
+    "enum/enum4linux.md",
+    "recon/nmap_all.md",
+    "enum/AD-enum/secretsdump.md",
+    "Admin Flag.png"
+  ]
+}

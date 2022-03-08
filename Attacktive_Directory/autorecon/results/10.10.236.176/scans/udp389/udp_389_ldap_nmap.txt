@@ -1,0 +1,13 @@
+# Nmap 7.92 scan initiated Mon Mar  7 15:59:25 2022 as: nmap -vv --reason -Pn -T4 -sU -sV -p 389 "--script=banner,(ldap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/udp389/udp_389_ldap_nmap.txt -oX /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/udp389/xml/udp_389_ldap_nmap.xml 10.10.236.176
+Nmap scan report for 10.10.236.176
+Host is up, received user-set (0.26s latency).
+Scanned at 2022-03-07 15:59:26 EST for 1s
+
+PORT    STATE SERVICE REASON               VERSION
+389/udp open  ldap    udp-response ttl 125 Microsoft Windows Active Directory LDAP (Domain: spookysec.local0., Site: Default-First-Site-Name)
+|_ldap-rootdse: ERROR: Script execution failed (use -d to debug)
+Service Info: Host: ATTACKTIVEDIREC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar  7 15:59:27 2022 -- 1 IP address (1 host up) scanned in 1.22 seconds

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Mon Mar  7 16:05:53 2022 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 445 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/tcp445/tcp_445_smb_nmap.txt -oX /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/tcp445/xml/tcp_445_smb_nmap.xml 10.10.236.176 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 445 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/tcp445/tcp_445_smb_nmap.txt -oX /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/tcp445/xml/tcp_445_smb_nmap.xml 10.10.236.176" start="1646687153" startstr="Mon Mar  7 16:05:53 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="445"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1646687156"/>
+<taskend task="NSE" time="1646687156"/>
+<taskbegin task="NSE" time="1646687156"/>
+<taskend task="NSE" time="1646687156"/>
+<taskbegin task="NSE" time="1646687156"/>
+<taskend task="NSE" time="1646687156"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1646687156"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1646687156"/>
+<taskbegin task="SYN Stealth Scan" time="1646687156"/>
+<taskend task="SYN Stealth Scan" time="1646687156" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1646687157"/>
+<taskend task="Service scan" time="1646687176" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1646687176"/>
+<taskprogress task="NSE" time="1646687207" percent="94.29" remaining="2" etc="1646687209"/>
+<taskend task="NSE" time="1646687219"/>
+<taskbegin task="NSE" time="1646687219"/>
+<taskend task="NSE" time="1646687221"/>
+<taskbegin task="NSE" time="1646687221"/>
+<taskend task="NSE" time="1646687221"/>
+<host starttime="1646687156" endtime="1646687221"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.236.176" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="microsoft-ds" method="table" conf="3"/><script id="smb-enum-services" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<hostscript><script id="smb-protocols" output="&#xa;  dialects: &#xa;    2.0.2&#xa;    2.1&#xa;    3.0&#xa;    3.0.2&#xa;    3.1.1"><table key="dialects">
+<elem>2.0.2</elem>
+<elem>2.1</elem>
+<elem>3.0</elem>
+<elem>3.0.2</elem>
+<elem>3.1.1</elem>
+</table>
+</script><script id="smb2-capabilities" output="&#xa;  2.0.2: &#xa;    Distributed File System&#xa;  2.1: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  3.0: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  3.0.2: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  3.1.1: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations"><table key="2.0.2">
+<elem>Distributed File System</elem>
+</table>
+<table key="2.1">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.0">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.0.2">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.1.1">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+</script><script id="smb-mbenum" output="&#xa;  ERROR: Failed to connect to browser service: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR"/><script id="smb-print-text" output="false">false</script><script id="smb2-time" output="&#xa;  date: 2022-03-07T21:06:22&#xa;  start_date: N/A"><elem key="date">2022-03-07T21:06:22</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: Failed to receive bytes: ERROR">false</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled and required"><table key="3.1.1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script></hostscript><times srtt="227883" rttvar="227883" to="1139415"/>
+</host>
+<taskbegin task="NSE" time="1646687221"/>
+<taskend task="NSE" time="1646687221"/>
+<taskbegin task="NSE" time="1646687221"/>
+<taskend task="NSE" time="1646687221"/>
+<taskbegin task="NSE" time="1646687221"/>
+<taskend task="NSE" time="1646687221"/>
+<runstats><finished time="1646687221" timestr="Mon Mar  7 16:07:01 2022" summary="Nmap done at Mon Mar  7 16:07:01 2022; 1 IP address (1 host up) scanned in 67.27 seconds" elapsed="67.27" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

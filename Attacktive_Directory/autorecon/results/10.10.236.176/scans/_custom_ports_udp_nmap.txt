@@ -1,0 +1,64 @@
+# Nmap 7.92 scan initiated Mon Mar  7 15:56:42 2022 as: nmap -vv --reason -Pn -T4 -sU -A --osscan-guess -p 53,80,88,139,135,389,464,445,593,636,3268,3269,3389,5985,9389,47001,49669,49676,49664,49675,49683,49672,49665,49667,49679,49695,49822 -oN /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/_custom_ports_udp_nmap.txt -oX /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/xml/_custom_ports_udp_nmap.xml 10.10.236.176
+Warning: 10.10.236.176 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.10.236.176 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.10.236.176
+Host is up, received user-set (0.26s latency).
+Scanned at 2022-03-07 15:56:42 EST for 163s
+
+PORT      STATE         SERVICE        REASON               VERSION
+53/udp    open          domain         udp-response ttl 125 (generic dns response: SERVFAIL)
+| fingerprint-strings: 
+|   NBTStat: 
+|_    CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+80/udp    closed        http           port-unreach ttl 125
+88/udp    open          kerberos-sec   udp-response         Microsoft Windows Kerberos (server time: 2022-03-07 20:57:11Z)
+135/udp   closed        msrpc          port-unreach ttl 125
+139/udp   closed        netbios-ssn    port-unreach ttl 125
+389/udp   open          ldap           udp-response ttl 125 Microsoft Windows Active Directory LDAP (Domain: spookysec.local0., Site: Default-First-Site-Name)
+445/udp   closed        microsoft-ds   port-unreach ttl 125
+464/udp   open|filtered kpasswd5       no-response
+593/udp   closed        http-rpc-epmap port-unreach ttl 125
+636/udp   closed        ldaps          port-unreach ttl 125
+3268/udp  closed        msft-gc        port-unreach ttl 125
+3269/udp  closed        msft-gc-ssl    port-unreach ttl 125
+3389/udp  open|filtered ms-wbt-server  no-response
+5985/udp  closed        wsman          port-unreach ttl 125
+9389/udp  closed        unknown        port-unreach ttl 125
+47001/udp closed        unknown        port-unreach ttl 125
+49664/udp closed        unknown        port-unreach ttl 125
+49665/udp closed        unknown        port-unreach ttl 125
+49667/udp closed        unknown        port-unreach ttl 125
+49669/udp open|filtered unknown        no-response
+49672/udp closed        unknown        port-unreach ttl 125
+49675/udp closed        unknown        port-unreach ttl 125
+49676/udp closed        unknown        port-unreach ttl 125
+49679/udp closed        unknown        port-unreach ttl 125
+49683/udp closed        unknown        port-unreach ttl 125
+49695/udp closed        unknown        port-unreach ttl 125
+49822/udp closed        unknown        port-unreach ttl 125
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-UDP:V=7.92%I=7%D=3/7%Time=622671B6%P=x86_64-pc-linux-gnu%r(NBTSt
+SF:at,32,"\x80\xf0\x80\x82\0\x01\0\0\0\0\0\0\x20CKAAAAAAAAAAAAAAAAAAAAAAAA
+SF:AAAAAA\0\0!\0\x01");
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.92%E=4%D=3/7%OT=%CT=%CU=80%PV=Y%DS=6%DC=T%G=N%TM=6226722D%P=x86_64-pc-linux-gnu)
+SEQ(CI=I%II=I)
+T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=80%CD=Z)
+
+Network Distance: 6 hops
+Service Info: Host: ATTACKTIVEDIREC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 49664/udp)
+HOP RTT       ADDRESS
+1   84.50 ms  10.2.0.1
+2   ... 5
+6   320.22 ms 10.10.236.176
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar  7 15:59:25 2022 -- 1 IP address (1 host up) scanned in 163.70 seconds

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Mon Mar  7 15:56:42 2022 as: nmap -vv -&#45;reason -Pn -T4 -sU -A -&#45;osscan-guess -p 53,80,88,139,135,389,464,445,593,636,3268,3269,3389,5985,9389,47001,49669,49676,49664,49675,49683,49672,49665,49667,49679,49695,49822 -oN /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/_custom_ports_udp_nmap.txt -oX /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/xml/_custom_ports_udp_nmap.xml 10.10.236.176 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sU -A -&#45;osscan-guess -p 53,80,88,139,135,389,464,445,593,636,3268,3269,3389,5985,9389,47001,49669,49676,49664,49675,49683,49672,49665,49667,49679,49695,49822 -oN /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/_custom_ports_udp_nmap.txt -oX /thm/Attacktive_Directory/autorecon/results/10.10.236.176/scans/xml/_custom_ports_udp_nmap.xml 10.10.236.176" start="1646686602" startstr="Mon Mar  7 15:56:42 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="27" services="53,80,88,135,139,389,445,464,593,636,3268-3269,3389,5985,9389,47001,49664-49665,49667,49669,49672,49675-49676,49679,49683,49695,49822"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1646686602"/>
+<taskend task="NSE" time="1646686602"/>
+<taskbegin task="NSE" time="1646686602"/>
+<taskend task="NSE" time="1646686602"/>
+<taskbegin task="NSE" time="1646686602"/>
+<taskend task="NSE" time="1646686602"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1646686602"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1646686602"/>
+<taskbegin task="UDP Scan" time="1646686602"/>
+<taskend task="UDP Scan" time="1646686626" extrainfo="27 total ports"/>
+<taskbegin task="Service scan" time="1646686626"/>
+<taskend task="Service scan" time="1646686724" extrainfo="6 services on 1 host"/>
+<taskbegin task="Traceroute" time="1646686726"/>
+<taskend task="Traceroute" time="1646686729"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1646686729"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1646686729"/>
+<taskbegin task="NSE" time="1646686729"/>
+<taskprogress task="NSE" time="1646686760" percent="99.52" remaining="1" etc="1646686760"/>
+<taskend task="NSE" time="1646686764"/>
+<taskbegin task="NSE" time="1646686764"/>
+<taskend task="NSE" time="1646686765"/>
+<taskbegin task="NSE" time="1646686765"/>
+<taskend task="NSE" time="1646686765"/>
+<host starttime="1646686602" endtime="1646686765"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.236.176" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="udp" portid="53"><state state="open" reason="udp-response" reason_ttl="125"/><service name="domain" extrainfo="generic dns response: SERVFAIL" servicefp="SF-Port53-UDP:V=7.92%I=7%D=3/7%Time=622671B6%P=x86_64-pc-linux-gnu%r(NBTStat,32,&quot;\x80\xf0\x80\x82\0\x01\0\0\0\0\0\0\x20CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  NBTStat: &#xa;    CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"><elem key="NBTStat">&#xa;    CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</elem>
+</script></port>
+<port protocol="udp" portid="80"><state state="closed" reason="port-unreach" reason_ttl="125"/><service name="http" method="table" conf="3"/></port>
+<port protocol="udp" portid="88"><state state="open" reason="udp-response" reason_ttl="0"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2022-03-07 20:57:11Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="udp" portid="135"><state state="closed" reason="port-unreach" reason_ttl="125"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="139"><state state="closed" reason="port-unreach" reason_ttl="125"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="udp" portid="389"><state state="open" reason="udp-response" reason_ttl="125"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: spookysec.local0., Site: Default-First-Site-Name" hostname="ATTACKTIVEDIREC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="udp" portid="445"><state state="closed" reason="port-unreach" reason_ttl="125"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="udp" portid="464"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="udp" portid="593"><state state="closed" reason="port-unreach" reason_ttl="125"/><service name="http-rpc-epmap" method="table" conf="3"/></port>
+<port protocol="udp" portid="636"><state state="closed" reason="port-unreach" reason_ttl="125"/><service name="ldaps" method="table" conf="3"/></port>
+<port protocol="udp" portid="3268"><state state="closed" reason="port-unreach" reason_ttl="125"/><service name="msft-gc" method="table" conf="3"/></port>
+<port protocol="udp" portid="3269"><state state="closed" reason="port-unreach" reason_ttl="125"/><service name="msft-gc-ssl" method="table" conf="3"/></port>
+<port protocol="udp" portid="3389"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="udp" portid="5985"><state state="closed" reason="port-unreach" reason_ttl="125"/><service name="wsman" method="table" conf="3"/></port>
+<port protocol="udp" portid="9389"><state state="closed" reason="port-unreach" reason_ttl="125"/></port>
+<port protocol="udp" portid="47001"><state state="closed" reason="port-unreach" reason_ttl="125"/></port>
+<port protocol="udp" portid="49664"><state state="closed" reason="port-unreach" reason_ttl="125"/></port>
+<port protocol="udp" portid="49665"><state state="closed" reason="port-unreach" reason_ttl="125"/></port>
+<port protocol="udp" portid="49667"><state state="closed" reason="port-unreach" reason_ttl="125"/></port>
+<port protocol="udp" portid="49669"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49672"><state state="closed" reason="port-unreach" reason_ttl="125"/></port>
+<port protocol="udp" portid="49675"><state state="closed" reason="port-unreach" reason_ttl="125"/></port>
+<port protocol="udp" portid="49676"><state state="closed" reason="port-unreach" reason_ttl="125"/></port>
+<port protocol="udp" portid="49679"><state state="closed" reason="port-unreach" reason_ttl="125"/></port>
+<port protocol="udp" portid="49683"><state state="closed" reason="port-unreach" reason_ttl="125"/></port>
+<port protocol="udp" portid="49695"><state state="closed" reason="port-unreach" reason_ttl="125"/></port>
+<port protocol="udp" portid="49822"><state state="closed" reason="port-unreach" reason_ttl="125"/></port>
+</ports>
+<os><portused state="closed" proto="udp" portid="80"/>
+<osfingerprint fingerprint="SCAN(V=7.92%E=4%D=3/7%OT=%CT=%CU=80%PV=Y%DS=6%DC=T%G=N%TM=6226722D%P=x86_64-pc-linux-gnu)&#xa;SEQ(CI=I%II=I)&#xa;T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;T6(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)&#xa;T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=N%T=80%CD=Z)&#xa;"/>
+</os>
+<distance value="6"/>
+<trace port="49664" proto="udp">
+<hop ttl="1" ipaddr="10.2.0.1" rtt="84.50"/>
+<hop ttl="6" ipaddr="10.10.236.176" rtt="320.22"/>
+</trace>
+<times srtt="263518" rttvar="40909" to="427154"/>
+</host>
+<taskbegin task="NSE" time="1646686765"/>
+<taskend task="NSE" time="1646686765"/>
+<taskbegin task="NSE" time="1646686765"/>
+<taskend task="NSE" time="1646686765"/>
+<taskbegin task="NSE" time="1646686765"/>
+<taskend task="NSE" time="1646686765"/>
+<runstats><finished time="1646686765" timestr="Mon Mar  7 15:59:25 2022" summary="Nmap done at Mon Mar  7 15:59:25 2022; 1 IP address (1 host up) scanned in 163.70 seconds" elapsed="163.70" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

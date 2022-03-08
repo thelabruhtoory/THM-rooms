@@ -1,0 +1,18 @@
+
+; <<>> DiG 9.17.19-3-Debian <<>> -p 53 -x 10.10.236.176 @10.10.236.176
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 16662
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4000
+;; QUESTION SECTION:
+;176.236.10.10.in-addr.arpa.	IN	PTR
+
+;; Query time: 4456 msec
+;; SERVER: 10.10.236.176#53(10.10.236.176) (UDP)
+;; WHEN: Mon Mar 07 16:06:03 EST 2022
+;; MSG SIZE  rcvd: 55
+
+
